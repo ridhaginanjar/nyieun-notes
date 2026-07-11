@@ -1,0 +1,22 @@
+{
+  "name": "nyieunnotes",
+  "version": "1.0.0",
+  "description": "a simple website for note taking apps built by React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ridhaginanjar/nyieun-notes.git"
+  },
+  "author": "Ridha Ginanjar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ridhaginanjar/nyieun-notes/issues"
+  },
+  "homepage": "https://github.com/ridhaginanjar/nyieun-notes#readme",
+  "devDependencies": {
+    "vite": "^8.1.4"
+  }
+}
