@@ -9,7 +9,11 @@ function Header() {
 }
 
 function Footer() {
-    return <h1>&copy; 2026 Nyeiun Notes</h1>
+    return (
+        <div className="footer">
+            <h2>&copy; 2026 Nyieun Notes</h2>
+        </div>
+    )
 }
 
 function NotesForm() {

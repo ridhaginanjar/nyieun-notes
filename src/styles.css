@@ -82,6 +82,11 @@ button {
     border-bottom: 1px solid var(--background-blocker);
 }
 
+.footer {
+    padding: 12px 24px;
+    border-top: 1px solid var(--background-blocker);
+}
+
 .notes-form {
     display: flex;
     flex-direction: column;
