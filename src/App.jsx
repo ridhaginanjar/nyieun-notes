@@ -182,7 +182,7 @@ function ActiveNotes() {
 function ArchiveNotes() {
     return (
         <section>
-            <p>Tidak Ada Catatan</p>
+            
         </section>
     )
 }
