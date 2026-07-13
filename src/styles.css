@@ -144,29 +144,19 @@ button {
 .active-notes-group {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.active-notes__header {
-    border: 2px solid var(--background-blocker);
-    display: flex;
+    align-items: flex-start;
     justify-content: flex-start;
-    align-self: flex-start;
-
-    margin: 12px;
-    padding: 12px;
+    margin: 64px 64px;
+    gap: 24px;
 }
 
 .active-notes__item {
     display: grid;
     grid-template-columns: repeat(4, 300px);
     gap: 24px;
-
-    margin: 24px;
 }
 .note-item {
-    padding: 24px;
+    padding: 12px 24px;
     border: 1px solid var(--muted-gray);
     border-radius: 8px;
 }

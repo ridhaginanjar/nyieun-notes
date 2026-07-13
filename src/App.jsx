@@ -38,9 +38,7 @@ function ActiveNotes() {
         <section>
             <h2 className='active-notes-title'>Active Notes (3)</h2>
                 <div className='active-notes-group'>
-                    <section className='active-notes__header'>
-                        <h3>July 2026</h3>
-                    </section>
+                    <h3>July 2026</h3>
                     <section className='active-notes__item'>
                         <section className="note-item">
                             <section className="note-item__content">
