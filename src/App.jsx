@@ -1,7 +1,11 @@
 import './styles.css';
 
 function Header() {
-    return <h1>Nyieun Notes</h1>
+    return (
+        <section className='header__teks'>
+            <h1>Nyieun Notes</h1>
+        </section>
+    )
 }
 
 function Footer() {
