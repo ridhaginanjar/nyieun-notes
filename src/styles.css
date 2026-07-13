@@ -141,7 +141,7 @@ button {
 .notes-form button[type='submit']:hover {
     background-color: var(--color-accent-hover);
 }
-.active-notes-group {
+.active-notes__group {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -156,6 +156,8 @@ button {
     gap: 24px;
 }
 .note-item {
+    display: flex;
+    flex-direction: column;
     padding: 12px 24px;
     border: 1px solid var(--muted-gray);
     border-radius: 8px;
@@ -165,6 +167,7 @@ button {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    margin-bottom: auto;
 }
 .note-item__title {
     padding-top:24px;
@@ -177,7 +180,6 @@ button {
 .note-item__meta {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
     padding: 12px 0;
 }

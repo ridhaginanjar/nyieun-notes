@@ -35,7 +35,7 @@ function NotesForm() {
 
 function ActiveNotes() {
     return (
-        <section className='active-notes-group'>
+        <section className='active-notes__group'>
                 <h3>Active Notes (3)</h3>
                 <section className='active-notes__item'>
                     <section className="note-item">
@@ -75,7 +75,7 @@ function ActiveNotes() {
                     <section className="note-item">
                         <section className="note-item__content">
                             <h4 className="note-item__title">Kapan Indonesia Maju?</h4>
-                            <p className="note-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p className="note-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, .</p>
                         </section>
                         <section className="note-item__meta">
                             <section className="note-item__date">
@@ -109,7 +109,7 @@ function ActiveNotes() {
                     <section className="note-item">
                         <section className="note-item__content">
                             <h4 className="note-item__title">Kapan Indonesia Maju?</h4>
-                            <p className="note-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p className="note-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,.</p>
                         </section>
                         <section className="note-item__meta">
                             <section className="note-item__date">
@@ -181,9 +181,7 @@ function ActiveNotes() {
 
 function ArchiveNotes() {
     return (
-        <section>
-            
-        </section>
+        <h1>sh</h1>
     )
 }
 
