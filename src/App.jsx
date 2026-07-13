@@ -2,7 +2,7 @@ import './styles.css';
 
 function Header() {
     return (
-        <section className='header__teks'>
+        <section className='header'>
             <h1>Nyieun Notes</h1>
         </section>
     )
