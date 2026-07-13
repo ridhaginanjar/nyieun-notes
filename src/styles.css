@@ -167,7 +167,7 @@ button {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    margin-bottom: auto;
+    flex-grow: 1;
 }
 .note-item__title {
     padding-top:24px;
