@@ -35,12 +35,12 @@ function NotesForm() {
 
 function ActiveNotes() {
     return (
-        <section className='active-notes__group'>
-                <section className='active-notes__header'>
+        <section className='notes-group'>
+                <section className='notes-group__header'>
                     <h3>Active Notes (2)</h3>
                     <p>Your ongoing thoughts, ideas, and daily reminders.</p>
                 </section>
-                <section className='active-notes__item'>
+                <section className='notes-group__item'>
                     <section className="note-item">
                         <section className="note-item__content">
                             <h4 className="note-item__title">Kapan Indonesia Maju?</h4>
@@ -184,12 +184,12 @@ function ActiveNotes() {
 
 function ArchiveNotes() {
     return (
-        <section className='archive-notes__group'>
-            <section className='archive-notes__header'>
+        <section className='notes-group'>
+            <section className='notes-group__header'>
                 <h3>Archive Notes (2)</h3>
                 <p>Stored notes that are out of sight but safe.</p>
             </section>
-            <section className='archive-notes__item'>
+            <section className='notes-group__item'>
                     <section className="note-item">
                         <section className="note-item__content">
                             <h4 className="note-item__title">Kapan Indonesia Maju?</h4>
@@ -274,7 +274,7 @@ function NotesList() {
     )
 }
 
-function SearchBar({itemTitle}) {
+function SearchBar() {
     return (
         <section className='searchBar'>
             <label htmlFor="searchNotes">Find your notes</label>
@@ -283,13 +283,21 @@ function SearchBar({itemTitle}) {
     )
 }
 
+function BodyApp() {
+    return (
+        <section className='body-app'>
+            <SearchBar/>
+            <NotesList/>
+        </section>
+    )
+}
+
 export default function App ({name}) {
     return (
         <>
             <Header />
-            <NotesForm />
-            {/* <SearchBar/> */}
-            <NotesList />
+            <NotesForm/>
+            <BodyApp/>
             <Footer />
         </>
     );
