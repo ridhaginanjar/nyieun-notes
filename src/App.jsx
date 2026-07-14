@@ -36,7 +36,10 @@ function NotesForm() {
 function ActiveNotes() {
     return (
         <section className='active-notes__group'>
-                <h3>Active Notes (3)</h3>
+                <section className='active-notes__header'>
+                    <h3>Active Notes (2)</h3>
+                    <p>Your ongoing thoughts, ideas, and daily reminders.</p>
+                </section>
                 <section className='active-notes__item'>
                     <section className="note-item">
                         <section className="note-item__content">
@@ -182,7 +185,10 @@ function ActiveNotes() {
 function ArchiveNotes() {
     return (
         <section className='archive-notes__group'>
-            <h3>Archive Notes (2)</h3>
+            <section className='archive-notes__header'>
+                <h3>Archive Notes (2)</h3>
+                <p>Stored notes that are out of sight but safe.</p>
+            </section>
             <section className='archive-notes__item'>
                     <section className="note-item">
                         <section className="note-item__content">
@@ -282,7 +288,7 @@ export default function App ({name}) {
         <>
             <Header />
             <NotesForm />
-            <SearchBar/>
+            {/* <SearchBar/> */}
             <NotesList />
             <Footer />
         </>

@@ -101,7 +101,6 @@ button {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    align-self: center;
     min-width: 480px;
 }
 
@@ -117,9 +116,6 @@ button {
 #form-body {
     display: flex;
     margin: 12px auto;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     min-width: 480px;
     min-height: 180px;
     padding: 12px;
@@ -144,30 +140,44 @@ button {
 .active-notes__group {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    margin: 64px 320px;
+    align-items: center;
+    justify-content: center;
     gap: 24px;
+    margin: 32px auto;
+
+    min-width: 920px;
 }
 
 .active-notes__item {
     display: grid;
-    grid-template-columns: repeat(4, 300px);
+    grid-template-columns: repeat(3, 300px);
     gap: 24px;
+}
+.active-notes__header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 930px;
 }
 
 .archive-notes__group {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     gap: 24px;
-    margin: 64px 320px;
+    margin: 32px auto;
+}
+.archive-notes__header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 930px;
 }
 
 .archive-notes__item {
     display: grid;
-    grid-template-columns: repeat(4, 300px);
+    grid-template-columns: repeat(3, 300px);
     gap: 24px; 
 }
 
