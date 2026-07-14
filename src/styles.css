@@ -236,3 +236,15 @@ button {
     color: var(--color-success);
     cursor: pointer;
 }
+
+.searchBar {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 24px 320px;
+}
+
+.searchBar input {
+    padding: 8px;
+    max-width: 240px;
+}

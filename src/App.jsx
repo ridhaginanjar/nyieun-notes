@@ -268,11 +268,21 @@ function NotesList() {
     )
 }
 
+function SearchBar({itemTitle}) {
+    return (
+        <section className='searchBar'>
+            <label htmlFor="searchNotes">Find your notes</label>
+            <input type="search" name="searchNotes" id="searchNotes" placeholder="What are you looking for?"/>
+        </section>
+    )
+}
+
 export default function App ({name}) {
     return (
         <>
             <Header />
             <NotesForm />
+            <SearchBar/>
             <NotesList />
             <Footer />
         </>
