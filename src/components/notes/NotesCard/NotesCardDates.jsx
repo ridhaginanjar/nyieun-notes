@@ -1,0 +1,18 @@
+
+function NotesCardDates() {
+    return (
+        <div className="note-item__date">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none" />
+                <g fill="none">
+                    <rect width="18" height="15" x="3" y="6" stroke="#a1a1a1" strokeWidth="2" rx="2" />
+                    <path fill="#a1a1a1" d="M3 10c0-1.886 0-2.828.586-3.414S5.114 6 7 6h10c1.886 0 2.828 0 3.414.586S21 8.114 21 10z" />
+                    <path stroke="#a1a1a1" strokeLinecap="round" strokeWidth="2" d="M7 3v3m10-3v3" />
+                </g>
+            </svg>
+            <time>Friday, 31 July 2026</time>
+        </div>
+    )
+}
+
+export default NotesCardDates;
