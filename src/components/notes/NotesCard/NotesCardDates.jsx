@@ -1,5 +1,5 @@
 
-function NotesCardDates() {
+function NotesCardDates({ date }) {
     return (
         <div className="note-item__date">
             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24">
@@ -10,7 +10,7 @@ function NotesCardDates() {
                     <path stroke="#a1a1a1" strokeLinecap="round" strokeWidth="2" d="M7 3v3m10-3v3" />
                 </g>
             </svg>
-            <time>Friday, 31 July 2026</time>
+            <time>{date}</time>
         </div>
     )
 }

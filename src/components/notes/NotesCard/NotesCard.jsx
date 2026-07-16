@@ -1,12 +1,12 @@
 import NotesCardContent from "./NotesCardContent";
 import NotesCardDates from "./NotesCardDates";
 
-function NotesCard() {
+function NotesCard({ notesId, title, text, date }) {
     return (
         <article className="note-item">
-            <NotesCardContent/>
+            <NotesCardContent title={title} text={text}/>
             <div className="note-item__meta">
-                <NotesCardDates/>
+                <NotesCardDates date={date}/>
                 <div className="note-item__actions">
                     <button className='note-item__actions-delete'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24">

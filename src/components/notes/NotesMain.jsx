@@ -2,10 +2,11 @@ import NotesForm from './NotesForm';
 import SearchBar from './SearchBar';
 import NotesList from './NotesList';
 import { useState } from 'react';
+import { data } from '../../utils/data';
 
 function NotesMain() {
+    // Search
     const [query, setQuery] = useState('');
-
     const handlingQuery = (e) => {
         setQuery((query) => [
             e.target.value
@@ -16,7 +17,7 @@ function NotesMain() {
         <main className='body-notes'>  
             <NotesForm/>
             <SearchBar handlingQuery={handlingQuery}/>
-            <NotesList/>
+            <NotesList data={data}/>
         </main>
     )
 }

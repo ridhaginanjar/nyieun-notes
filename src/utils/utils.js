@@ -5,7 +5,6 @@ export function saveNotes(notes) {
         'id': uuid,
         'title': string,
         'teks': string,
-        'deadline': datetime,
         'isArchived': boolean,
         'createdAt': datetime,
         'updatedAt': datetime
@@ -16,4 +15,19 @@ export function saveNotes(notes) {
 
 export function readNotes() {
     return JSON.stringify(localStorage.getItem('notes') || []);
+}
+
+export function convertToDate(timestamp) {
+    const date = new Date(timestamp);
+
+    const format = {
+        weekday: 'long',
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric'
+    }
+
+    const convertedDate = date.toLocaleDateString('en-US', format)
+
+    return convertedDate
 }

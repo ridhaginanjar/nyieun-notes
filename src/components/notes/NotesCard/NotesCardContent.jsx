@@ -1,8 +1,8 @@
-function NotesCardContent() {
+function NotesCardContent({title, text}) {
     return (
         <div className="note-item__content">
-            <h4 className="note-item__title">Kapan Indonesia Maju?</h4>
-            <p className="note-item__text">Lorem</p>
+            <h4 className="note-item__title">{ title }</h4>
+            <p className="note-item__text">{ text }</p>
         </div>
     )
 }
