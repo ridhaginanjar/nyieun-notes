@@ -17,7 +17,7 @@ function NotesMain() {
         <main className='body-notes'>  
             <NotesForm/>
             <SearchBar handlingQuery={handlingQuery}/>
-            <NotesList data={data}/>
+            <NotesList data={data} query={query}/>
         </main>
     )
 }

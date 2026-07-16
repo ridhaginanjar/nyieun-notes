@@ -1,5 +1,4 @@
 function SearchBar({ handlingQuery }) {
-
     return (
         <search className='searchBar'>
             <label htmlFor="searchNotes">Find your notes</label>
