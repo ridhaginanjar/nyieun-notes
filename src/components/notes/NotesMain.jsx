@@ -6,11 +6,10 @@ import { useState } from 'react';
 function NotesMain() {
     const [query, setQuery] = useState('');
 
-    const handlingQuery = (event) => {
-        // setQuery((query) => [
-        //     e.target.value
-        // ])
-        console.log(event)
+    const handlingQuery = (e) => {
+        setQuery((query) => [
+            e.target.value
+        ])
     };
 
     return (
