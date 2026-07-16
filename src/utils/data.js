@@ -4,6 +4,7 @@ export const data = [
         'title': 'Kapan Indonesia Maju?',
         'text': "Tunggu sampai Gibran jadi Presiden",
         'isArchived': true,
+        'isDeleted': false,
         'createdAt': "2026-07-16T02:21:58+00:00",
         'updatedAt': "2026-07-16T02:21:58+00:00"
     },
@@ -12,6 +13,7 @@ export const data = [
         'title': 'Mengapa Prabowo Jadi Presiden?',
         'text': "Karena Konstitusi Mengizinkan dan Bermain Di Belakangnya",
         'isArchived': true,
+        'isDeleted': false,
         'createdAt': "2026-07-16T02:21:58+00:00",
         'updatedAt': "2026-07-16T02:21:58+00:00"
     },
@@ -20,6 +22,7 @@ export const data = [
         'title': 'Menghadang Kebebasan',
         'text': "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua loremgenerator.io.",
         'isArchived': false,
+        'isDeleted': false,
         'createdAt': "2026-07-16T02:21:58+00:00",
         'updatedAt': "2026-07-16T02:21:58+00:00"
     },
@@ -28,6 +31,7 @@ export const data = [
         'title': 'Ga Cuman Konstitusi yang Diacak-acak, Ko Bisa?',
         'text': "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua loremgenerator.io.",
         'isArchived': false,
+        'isDeleted': false,
         'createdAt': "2026-07-16T02:21:58+00:00",
         'updatedAt': "2026-07-16T02:21:58+00:00"
     },
@@ -36,6 +40,7 @@ export const data = [
         'title': 'Berkembang adalah hak segala individu',
         'text': "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua loremgenerator.io.",
         'isArchived': false,
+        'isDeleted': false,
         'createdAt': "2026-07-16T02:21:58+00:00",
         'updatedAt': "2026-07-16T02:21:58+00:00"
     }
