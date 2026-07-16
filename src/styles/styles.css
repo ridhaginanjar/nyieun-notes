@@ -254,126 +254,53 @@ button {
 }
 
 @media (max-width: 980px){
-    .notes-form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 12px;
-        margin: 36px auto;
-    }
-
     .notes-form__content {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
         min-width: 620px;
     }
 
     #form-title {
-        display:flex;
-        align-items: center;
-        flex-direction: column;
-        margin: 12px auto;
-        padding: 12px;
         min-width: 620px;
     }
 
     #form-body {
-        display: flex;
-        margin: 12px auto;
-        min-width: 480px;
-        min-height: 180px;
-        padding: 12px;
         min-width: 620px;
     }
 
     .searchBar {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        align-items: flex-start;
-        justify-content: flex-start;
-
         min-width: 620px;
     }
 
     .notes-group {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 24px;
-        margin: 32px auto;
-
         min-width: 620px;
     }
 
     .notes-group__item {
-        display: grid;
         grid-template-columns: repeat(2, 300px);
-        gap: 24px;
     }
     .notes-group__header {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
         min-width: 620px;
     }
 }
 
 @media (max-width: 650px) {
-    .notes-form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 12px;
-        margin: 36px auto;
-    }
-
     .notes-form__content {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
         min-width: 460px;
     }
 
     #form-title {
-        display:flex;
-        align-items: center;
-        flex-direction: column;
-        margin: 12px auto;
-        padding: 12px;
         min-width: 460px;
     }
 
     #form-body {
-        display: flex;
-        margin: 12px auto;
-        min-width: 480px;
-        min-height: 180px;
-        padding: 12px;
         min-width: 460px;
     }
 
     .searchBar {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        align-items: flex-start;
-        justify-content: flex-start;
 
         min-width: 460px;
     }
 
     .notes-group {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 24px;
-        margin: 32px auto;
 
         min-width: 460px;
     }
@@ -382,28 +309,11 @@ button {
         display: grid;
         margin-right: auto;
         grid-template-columns: repeat(1, 300px);
-        gap: 12px;
     }
     .notes-group__header {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
         min-width: 460px;
     }
     .note-item {
-        display: flex;
-        flex-direction: column;
-        padding: 12px 24px;
-        border: 1px solid var(--muted-gray);
-        border-radius: 8px;
-
         min-width: 460px;
-    }
-
-    .note-item__content {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-        flex-grow: 1;
     }
 }
