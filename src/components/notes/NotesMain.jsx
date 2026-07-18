@@ -3,6 +3,7 @@ import SearchBar from './SearchBar';
 import NotesList from './NotesList';
 import { useState } from 'react';
 import { data } from '../../utils/data';
+import { createNewNotes } from '../../utils/utils';
 
 function NotesMain() {
     // Search
@@ -52,9 +53,17 @@ function NotesMain() {
         }
     }
 
+    const handlingForm = (e, title, body) => {
+        e.preventDefault("")
+        setCurrentNotes((prev) => [
+            ...prev,
+            createNewNotes(title, body)
+        ])
+    }
+
     return (
         <main className='body-notes'>  
-            <NotesForm/>
+            <NotesForm handlingForm={handlingForm}/>
             <SearchBar handlingQuery={handlingQuery}/>
             <NotesList notes={currentNotes} query={query} handlingActions={handlingActions}/>
         </main>

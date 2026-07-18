@@ -31,3 +31,18 @@ export function convertToDate(timestamp) {
 
     return convertedDate
 }
+
+export const createNewNotes = (title, body) => {
+        let createdAt = new Date().toISOString(); 
+        let id = crypto.randomUUID()
+
+        return {
+            'id': id,
+            'title': title,
+            'text': body,
+            'isArchived': false,
+            'isDeleted': false,
+            'createdAt': createdAt,
+            'updatedAt': createdAt
+        }
+    }
