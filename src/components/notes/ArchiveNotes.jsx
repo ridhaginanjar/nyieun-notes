@@ -1,7 +1,7 @@
 import NotesCard from './NotesCard/NotesCard'
 import { convertToDate } from '../../utils/utils'
 
-function ArchiveNotes({archiveData, deleteHandler, archiveHandler}) {
+function ArchiveNotes({archiveData, actionsHandler}) {
     const lengthArchiveData = archiveData.length
     return (
         <section className='notes-group'>
@@ -22,8 +22,7 @@ function ArchiveNotes({archiveData, deleteHandler, archiveHandler}) {
                                 date={createdDate}
                                 isArchived={ard.isArchived}
                                 isDeleted= {ard.isDeleted}
-                                deleteHandler={deleteHandler}
-                                archiveHandler={archiveHandler}
+                                actionsHandler={actionsHandler}
                             />
                         )
                     })

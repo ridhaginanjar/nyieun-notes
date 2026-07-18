@@ -1,7 +1,7 @@
 import NotesCard from './NotesCard/NotesCard'
 import { convertToDate } from '../../utils/utils'
 
-function ActiveNotes({activeData, deleteHandler, archiveHandler}) {
+function ActiveNotes({activeData, actionsHandler}) {
     const lengthActiveData = activeData.length
     return (
         <section className='notes-group'>
@@ -22,8 +22,7 @@ function ActiveNotes({activeData, deleteHandler, archiveHandler}) {
                                 date={createdDate}
                                 isArchived={acd.isArchived}
                                 isDeleted= {acd.isDeleted}
-                                deleteHandler={deleteHandler}
-                                archiveHandler={archiveHandler}
+                                actionsHandler={actionsHandler}
                             />
                         )
                     })

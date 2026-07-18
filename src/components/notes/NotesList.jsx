@@ -4,27 +4,54 @@ import { useState } from 'react';
 
 
 function NotesList({data, query}) {
+    const [currentNotes, setCurrentNotes] = useState(data);
+
     const currentQuery = query == '' ? '' : query[0].toLowerCase()
     const currentData = data.filter((item) => item.title.toLowerCase().includes(currentQuery))
+
+    const handlingActions = (e) => {
+        let btn_element = e.currentTarget
+        let btn_value = btn_element.getAttribute('value')
+        let note_id = btn_element.getAttribute('notes-id') 
+        
+        if (btn_value == 'delete') {
+            let updatedNotes = currentNotes.filter((note) => {
+                if (note.id == note_id) {
+                    note.isDeleted == false ? (
+                            note.isDeleted = true
+                        ) :
+                        (
+                            note.isDeleted = false
+                        )
+                }
+                return note
+            })
+            setCurrentNotes(updatedNotes)
+        } 
+        
+        if (btn_value == 'archive') {
+            let updatedNotes = currentNotes.filter((note) => {
+                if (note.id == note_id) {
+                    note.isArchived == false ? (
+                            note.isArchived = true
+                        ) :
+                        (
+                            note.isArchived = false
+                        )
+                }
+                return note
+            })
+            setCurrentNotes(updatedNotes)
+        }
+    }
 
     const activeData = currentData.filter((item) => item.isArchived == false)
     const archiveData = currentData.filter((item) => item.isArchived == true)
 
-    const [delete_, setDelete_] = useState('');
-    const [archive, setArchive] = useState('');
-
-    const handlingDelete = (e) => {
-        console.log(e)
-    }
-
-    const handlingArchive = (e) => {
-        console.log(e)
-    }
-
     return (
         <>
-            <ActiveNotes activeData={activeData} deleteHandler = {handlingDelete} archiveHandler = {handlingArchive}/>
-            <ArchiveNotes archiveData={archiveData} deleteHandler = {handlingDelete} archiveHandler = {handlingArchive}/>
+            <ActiveNotes activeData={activeData} actionsHandler = {handlingActions}/>
+            <ArchiveNotes archiveData={archiveData} actionsHandler = {handlingActions}/>
         </>
         
     )
