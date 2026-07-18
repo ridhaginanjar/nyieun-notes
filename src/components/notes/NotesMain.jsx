@@ -23,18 +23,25 @@ function NotesMain() {
         let note_id = btn_element.getAttribute('notes-id') 
         
         if (btn_value == 'delete') {
-            let updatedNotes = currentNotes.filter((note) => {
-                if (note.id == note_id) {
-                    note.isDeleted == false ? (
-                            note.isDeleted = true
-                        ) :
-                        (
-                            note.isDeleted = false
-                        )
-                }
-                return note
-            })
-            setCurrentNotes(updatedNotes)
+            let deleteConfirmations = confirm("Apakah Anda yakin?")
+
+            if (deleteConfirmations == true) {
+                let updatedNotes = currentNotes.filter((note) => {
+                    if (note.id == note_id) {
+                        note.isDeleted == false ? (
+                                note.isDeleted = true
+                            ) :
+                            (
+                                note.isDeleted = false
+                            )
+                    }
+                    return note
+                })
+                setCurrentNotes(updatedNotes)
+            } else (
+                console.log("Penghapusan dibatalkan!")
+            )
+            
         } 
         
         if (btn_value == 'archive') {
