@@ -53,8 +53,22 @@ function NotesMain() {
         }
     }
 
-    const handlingForm = (e, title,setTitle, body,setBody) => {
+    const handlingForm = (e, 
+        title ,setTitle, 
+        body, setBody,
+        errorBodyLength, setErrorBodyLength
+    ) => {
         e.preventDefault("")
+
+        // Validation
+        let lengthBody = body.length
+        let isBodyLengthPassed = lengthBody > 10
+        console.log(isBodyLengthPassed)
+
+        if (!isBodyLengthPassed) {
+            return setErrorBodyLength("Harap mengisi catatan minimal 10 Karakter")
+        }
+
         setCurrentNotes((prev) => [
             ...prev,
             createNewNotes(title, body)

@@ -71,6 +71,10 @@ body {
     background-color: var(--color-background);
 }
 
+.error-msg {
+    
+}
+
 input,
 textarea,
 button {
