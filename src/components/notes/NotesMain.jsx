@@ -53,12 +53,15 @@ function NotesMain() {
         }
     }
 
-    const handlingForm = (e, title, body) => {
+    const handlingForm = (e, title,setTitle, body,setBody) => {
         e.preventDefault("")
         setCurrentNotes((prev) => [
             ...prev,
             createNewNotes(title, body)
         ])
+
+        setTitle("");
+        setBody("");
     }
 
     return (
