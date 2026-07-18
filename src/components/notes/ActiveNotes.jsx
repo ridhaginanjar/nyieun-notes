@@ -3,15 +3,18 @@ import { convertToDate } from '../../utils/utils'
 
 function ActiveNotes({activeData, actionsHandler}) {
     const lengthActiveData = activeData.length
+    const isExists = lengthActiveData > 0;
     return (
         <section className='notes-group'>
             <header className='notes-group__header'>
                 <h3>Active Notes ({lengthActiveData})</h3>
-                <p>Your ongoing thoughts, ideas, and daily reminders.</p>
             </header>
             <div className='notes-group__item'>
                 {
-                    activeData.map(acd => {
+                    !isExists ? (
+                        <p style={{marignLeft: "auto"}}>Tidak ada catatan</p>
+                    ) : (
+                        activeData.map(acd => {
                         let createdDate = convertToDate(acd.createdAt)
                         return (
                             <NotesCard 
@@ -26,6 +29,7 @@ function ActiveNotes({activeData, actionsHandler}) {
                             />
                         )
                     })
+                    )
                 }
             </div>
         </section>
