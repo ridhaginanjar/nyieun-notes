@@ -83,6 +83,7 @@ function NotesMain() {
 
         setTitle("");
         setBody("");
+        setErrorBodyLength("");
     }
 
     return (
