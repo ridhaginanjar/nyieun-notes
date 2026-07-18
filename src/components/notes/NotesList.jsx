@@ -45,8 +45,8 @@ function NotesList({data, query}) {
         }
     }
 
-    const activeData = currentData.filter((item) => item.isArchived == false)
-    const archiveData = currentData.filter((item) => item.isArchived == true)
+    const activeData = currentData.filter((item) => item.isArchived == false && item.isDeleted == false)
+    const archiveData = currentData.filter((item) => item.isArchived == true && item.isDeleted == false)
 
     return (
         <>
